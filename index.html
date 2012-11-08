@@ -21,74 +21,124 @@
       <div class="inner">
         <h1>Appfest</h1>
         <h2>git down and boogie</h2>
-        <a href="https://github.com/thatandromeda/appfest" class="button"><small>View project on</small>GitHub</a>
       </div>
     </header>
 
     <div id="content-wrapper">
-      <div class="inner clearfix">
-        <section id="main-content">
-          <h3>my stuff</h3>
+      <div class="clearfix" id="main-content">          
+        <div class="slide">
+            <a name="slide0"></a>
+            <h3>what is version control?</h3>
+            <img src="https://github.com/github/media/blob/master/octocats/octocat.png?raw=true" height=400 width=400>
+            <a href="#slide1" class="forward"></a>
+        </div>
+          
+        <div class="separator">&nbsp;</div>
 
-<ul>
-<li>what is it? (version control, why we care)</li>
-<li>concepts:
-** overall process
-*** account
-*** repo (example: dpla/platform)
-*** pull, push
-** what you do
-*** add and commit -- staging in general
-** working with others
-*** merge (and in general separate simultaneous editing)
-*** fork and pull request?</li>
+        <a name="slide1"></a>
+        <div class="slide">
+            <h3>main concepts</h3>
 
-(think I shouldn't try to cover commands here; point them at github help & power users, note that there are GUIs for Mac and Windows (and if you use linux, command line, haha))
-</ul><h3>Welcome to GitHub Pages.</h3>
+            <p>Set up your account</p>
+            <ul>
+                <li><a href="http://help.github.com/articles/set-up-git">help.github.com >> Set up git</a></li>
+                <li>tell everyone your username!</li>
+            </ul>
+            
+            <a href="#slide2" class="forward"></a>
+        </div>
+          
+        <div class="separator">&nbsp;</div>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+        <a name="slide2"></a>
+        <div class="slide">
+            <h3>main concepts</h3>
+            <p>Repositories</p>
+            <ul>
+                <li><a href="http://github.com/thatandromeda/appfest">github.com/thatandromeda/appfest</a> // <i>this presentation & what I'll do tomorrow</i></li>
+                <li>these slides live at <a href="http://thatandromeda.github.com/appfest">thatandromeda.github.com/appfest</a></li>
+                <li><a href="http://github.com/dpla/platform">github.com/dpla/platform</a> // <i>what we'll build upon</i></li>
+                <li><a href="http://github.com/dpla/ingestion">github.com/dpla/ingestion</a> // <i>how the data ingest works</i></li>
+                <li><a href="http://github.com/dpla/appfest">github.com/dpla/appfest</a> // <i>data, documentation, sample code</i></li>
+                <li>there are other DPLA repositories, but you can ignore them</li>
+            </ul>
+            <a href="#slide3" class="forward"></a>
+        </div>
+          
+        <div class="separator">&nbsp;</div>
 
+        <a name="slide3"></a>
+        <div class="slide">
+            <h3>main concepts</h3>
+            <p>Moving bits around</p>
+            <ul>
+                <li>pull</li>
+                <li>push</li>
+            </ul>
+            <a href="#slide4" class="forward"></a>
+        </div>
+          
+        <div class="separator">&nbsp;</div>
+
+        <a name="slide4"></a>
+        <div class="slide">
+            <h3>in your repo</h3>
+            <ul>
+                <li>pull</li>
+                <li>edit & save</li>
+                <li>add</li>
+                <li>commit</li>
+                <li>push</li>
+                <li>lather, rinse, repeat!</li>
+            </ul>
+            <a href="#slide5" class="forward"></a>
+        </div>
+          
+        <div class="separator">&nbsp;</div>
+
+        <a name="slide5"></a>
+        <div class="slide">
+            <h3>playing nice with others</h3>
+            <ul>
+                <li>fork</li>
+                <li>branch</li>
+                <li>pull request</li>
+                <li>merge</li>
+            </ul>
+            <a href="#slide6" class="forward"></a>
+        </div>
+          
+        <div class="separator">&nbsp;</div>
+        <a name="slide6"></a>
+
+        <div class="slide">
+            <h3>getting started & getting help</h3>
+            <ul>
+                <li>set up your account & share your username: <a href="http://help.github.com/articles/set-up-git">help.github.com >> Set up git</a></li>
+                <li>download <a href="http://central.github.com/mac/latest">Mac</a> or <a href="http://github-windows.s3.amazonaws.com/GitHubSetup.exe">Windows</a> clients</li>
+                <li>feeling hardcore? there's also command-line documentation  at <a href="http://help.github.com">help.github.com</a> </li>
+                <li>feeling stuck? ask your friends</li>
+            </ul>
+            <a href="#slide7" class="forward"></a>
+        </div>
+          
+        <div class="separator">&nbsp;</div>
+        <a name="slide7"></a>
+
+<!-- in case I need this bit of styling 
 <pre><code>$ cd your_repo_root/repo_name
 $ git fetch origin
 $ git checkout gh-pages
 </code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://github.com/thatandromeda/appfest/zipball/master" class="button">
-            <small>Download</small>
-            .zip file
-          </a>
-          <a href="https://github.com/thatandromeda/appfest/tarball/master" class="button">
-            <small>Download</small>
-            .tar.gz file
-          </a>
-
-          <p class="repo-owner"><a href="https://github.com/thatandromeda/appfest"></a> is maintained by <a href="https://github.com/thatandromeda">thatandromeda</a>.</p>
-
-          <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
-      </div>
-    </div>
-
-  
-  </body>
+-->
+                <div class="slide">
+                    <h3>credits</h3>
+                    <p class="repo-owner"><a href="https://github.com/thatandromeda/appfest">This Appfest repository</a> is maintained by <a href="https://github.com/thatandromeda" class="user-mention">@thatandromeda</a>.</p>
+                    
+                    <p>This page was generated by <a href="pages.github.com">GitHub Pages</a> using the Architect theme by <a href="http://twitter.com/jasonlong">Jason Long</a>, modified by <a href="https://github.com/thatandromeda" class="user-mention">@thatandromeda</a>.</p>
+                </div>
+            </div>
+        </div>    
+    
+    </body>
 </html>
