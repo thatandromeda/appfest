@@ -13,14 +13,14 @@
 	
     <div class="askQuestion">
     	<h2>Ask a question</h2>
-        <form action="">
-            {% for field in questionform.visible_fields %}
-                {{ field }}<br />
-            {% endfor %}
-        	<input type="submit" value="submit" />
-        </form>
-
-    	<div class="button"><a href="questionpage.html">Browse Questions</a></div>
+            <form action="" method="post">{% csrf_token %}
+                {% for field in questionform.visible_fields %}
+                    {{ field }}<br />
+                    {{ field.errors }}
+                {% endfor %}
+                <input type="submit" value="submit" />
+            </form>
+    	<div class="button"><a href="{% url open %}">Browse Questions</a></div>
     	
     </div>
 

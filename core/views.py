@@ -3,9 +3,21 @@ from appfest.core.models import *
 from django.conf import settings
 from django import forms
 from appfest.core.forms import QuestionForm
+from django.contrib.auth.decorators import login_required
 
+@login_required
 def home(request):
-    questionform = QuestionForm()
+    if request.method == 'POST':
+        questionform = QuestionForm(request.POST)
+        if questionform.is_valid():
+            questionform.save()
+            return HttpResponseRedirect('/open')
+    else:
+        if request.user.is_authenticated():
+            questionform = QuestionForm(instance=request.user)
+        else:
+            questionform = QuestionForm()
+
     return render(request, 'askaquestion.html', {
         'static': settings.STATIC_URL, 'questionform': questionform
     }) 
