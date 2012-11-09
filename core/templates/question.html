@@ -2,23 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>cuttr | Question Page</title>
+<title>cuttr | Question</title>
 <link rel="stylesheet" type="text/css" href="cuttr.css" />
-<link rel="stylesheet" type="text/css" href="{{ static }}cuttr.css" />
 </head>
 
 <body>
 
 	<header><h1>cuttr</h1></header>
     
-    <!--Ask A Question-->
-
+    <!--Top Nav-->
         <div class="askQuestion">
             <h2>Ask a question</h2>
             <form action="">
             <label>
-            	<textarea name="textarea" rows="1" cols="50">Type your question here</textarea>
-                <!-- <textarea rows="1" cols="50"><input type="text" name="question" /></textarea><input type="submit" value="submit" /> -->
+                <textarea rows="1" cols="50"><input type="text" name="question" /></textarea><input type="submit" value="submit" />
             </label>
             </form>   
         </div>
@@ -27,16 +24,22 @@
      </div> -->
 
     <div class="content">
-    <h2>Browse Questions</h2>
+    
+    <h2>{{question_id=question.id question_text=question.text}}</h2>
 
         {% for question in questions %}
-            <div class="questionBox">
+            <div class="commentBox">
                 <div class="user"><img src="{% if question.user.profile.librarian %}librarian_avatar.jpg{% else %}generic_avatar.jpg{% endif %}" alt="{{ question.user.username }}" /></div>
-                <div class="question"><a href="{% url question_id=question.id question_text=question.text %}">This is a question</a></div>
+                <div class="question">This is a comment</div>
+                <div class="comment">
+                	<div class="user"><img src="{% if question.user.profile.librarian %}librarian_avatar.jpg{% else %}generic_avatar.jpg{% endif %}" alt="{{ question.user.username }}" /></div>
+                	<div class="question">This is a comment reply</div>
+                </div>
             </div>
         {% endfor %}
 
-
     </div>
+
+
 </body>
 </html>
