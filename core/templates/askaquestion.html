@@ -14,14 +14,14 @@
     <div class="askQuestion">
     	<h2>Ask a question</h2>
         <form action="">
-        <label>
-        	<textarea rows="4" cols="75"><input type="text" name="question" /></textarea><br />
+            {% for field in questionform.visible_fields %}
+                {{ field }}<br />
+            {% endfor %}
         	<input type="submit" value="submit" />
-        </label>
         </form>
 
     	<div class="button"><a href="questionpage.html">Browse Questions</a></div>
-
+    	
     </div>
 
 	<footer></footer>
