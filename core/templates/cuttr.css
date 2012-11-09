@@ -4,7 +4,7 @@
 body {
 	border: 1px black solid;
 	color:#000;
-	background-color:#101010;
+	background-color:rgb(77,72,69);
 	font-family: Arial, Helvetica, sans-serif;
 	font-size:16px;
 	width:960px;
@@ -17,12 +17,18 @@ header {
 	
 }
 
+.mainContent {
+	background-color:rgb(255,255,255);
+	padding: 10px;
+	margin: 30px 0 0 0;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight:bold;	
 }
 
 a {
-	color: #36F;
+	color: rgb(22, 155, 171);
 	text-decoration:none;
 }
 a:hover {
@@ -52,28 +58,30 @@ a:hover {
 }
 
 
-.content {
+.pageContent {
 	padding:15px;
 	border:1px solid #ccc;
+	background-color:#fff;
 }
 
 .questionBox {
 	padding:10px;
 	border:1px solid #ccc;
-	min-height:40px;
+	min-height:60px;
+	margin-bottom:15px;
 }
 
 .commentBox {
 	padding:10px;
 	border:1px solid #ccc;
-	min-height:40px;
+	min-height:60px;
 }
 
-.comment {
+.commentReply {
 	padding:10px;
 	border:1px solid #ccc;
-	min-height:40px;
-	margin: 35px 15px 15px 15px;
+	min-height:60px;
+	margin: 55px 15px 15px 15px;
 	background-color:#ebebeb;
 }
 
@@ -132,11 +140,6 @@ input {
 	font-style: italic;
 }
 
-
-.content {
-
-	padding: 10px 0;
-}
 
 
 .footer {

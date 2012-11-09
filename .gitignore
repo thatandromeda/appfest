@@ -28,3 +28,6 @@ pip-log.txt
 
 # django database
 appfest
+
+# stupid Mac stuff
+.DS_Store
