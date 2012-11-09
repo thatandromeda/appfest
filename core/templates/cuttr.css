@@ -67,20 +67,20 @@ a:hover {
 .questionBox {
 	padding:10px;
 	border:1px solid #ccc;
-	min-height:40px;
+	min-height:60px;
 }
 
 .commentBox {
 	padding:10px;
 	border:1px solid #ccc;
-	min-height:40px;
+	min-height:60px;
 }
 
-.comment {
+.commentReply {
 	padding:10px;
 	border:1px solid #ccc;
-	min-height:40px;
-	margin: 35px 15px 15px 15px;
+	min-height:60px;
+	margin: 55px 15px 15px 15px;
 	background-color:#ebebeb;
 }
 

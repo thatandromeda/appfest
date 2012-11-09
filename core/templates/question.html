@@ -16,7 +16,7 @@
             <h2>Ask a question</h2>
             <form action="">
             <label>
-                <textarea rows="1" cols="50"><input type="text" name="question" /></textarea><input type="submit" value="submit" />
+                <textarea rows="1" cols="50">Type your question here</textarea><input type="submit" value="submit" />
             </label>
             </form>   
         </div>
@@ -26,18 +26,18 @@
 
     <div class="pageContent">
     
-    <h2>{{question_id=question.id question_text=question.text}}</h2>
+    <h2>Were there really aliens in Roswell?</h2>
 
-        {% for question in questions %}
+        
             <div class="commentBox">
-                <div class="user"><img src="{% if question.user.profile.librarian %}librarian_avatar.jpg{% else %}generic_avatar.jpg{% endif %}" alt="{{ question.user.username }}" /></div>
+                <div class="user"><img src="images/avatarReg.png" alt="{{ question.user.username }}" width="60" height="60" /></div>
                 <div class="question">This is a comment</div>
-                <div class="comment">
-                	<div class="user"><img src="{% if question.user.profile.librarian %}librarian_avatar.jpg{% else %}generic_avatar.jpg{% endif %}" alt="{{ question.user.username }}" /></div>
+                <div class="commentReply">
+                	<div class="user"><img src="images/avatarLib.png" alt="{{ question.user.username }}" width="60" height="60" /></div>
                 	<div class="question">This is a comment reply</div>
                 </div>
             </div>
-        {% endfor %}
+        
 
     </div>
 </div>
