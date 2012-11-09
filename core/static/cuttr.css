@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	color:#000;
+	background-color:#fff;
+	font: Arial, Helvetica, sans-serif;
+	font-size:16px;
+	width:960px;
+	border:1px solid #ccc;
+	padding:20px;
+	margin:auto;
+}
+
+header {
+	
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight:bold;	
+}
+
+a {
+	color: #36F;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+
+.nav {
+	width:100%;
+	min-height:100px;
+}
+
+.askQuestion .button nav {
+	float:left;	
+	display:inline;
+	width:50%;
+}
+
+.button {
+	display:block;
+	padding: 5px;
+	border: 1px solid #ccc;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width:10em;
+	text-align:center;
+}
+
+
+.content {
+	padding:15px;
+	border:1px solid #ccc;
+}
+
+.questionBox {
+	padding:10px;
+	border:1px solid #ccc;
+	min-height:40px;
+}
+
+
+.user {
+	float:left;
+	border:1px solid #ccc;
+	margin-right: 10px;
+}
+
+.question {
+	text-align:left;
+}
