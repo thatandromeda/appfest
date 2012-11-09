@@ -5,6 +5,8 @@ from os.path import dirname, realpath, join
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
+PROJECT_DIR = dirname(dirname(realpath(__file__)))
+
 ADMINS = (
     # ('Your Name', 'your_email@example.com'),
 )
@@ -58,7 +60,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
-STATIC_ROOT = ''
+STATIC_ROOT = join(PROJECT_DIR, "core", "static")
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"
@@ -103,8 +105,6 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'appfest.urls'
-
-PROJECT_DIR = dirname(dirname(realpath(__file__)))
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
