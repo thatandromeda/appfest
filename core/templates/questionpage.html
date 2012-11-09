@@ -17,7 +17,8 @@
             <h2>Ask a question</h2>
             <form action="">
             <label>
-                <textarea rows="1" cols="50"><input type="text" name="question" /></textarea><input type="submit" value="submit" />
+            	<textarea name="textarea" rows="1" cols="50">Type your question here</textarea>
+                <!-- <textarea rows="1" cols="50"><input type="text" name="question" /></textarea><input type="submit" value="submit" /> -->
             </label>
             </form>   
         </div>
@@ -26,7 +27,6 @@
      </div> -->
 
     <div class="content">
-    
     <h2>Browse Questions</h2>
 
         {% for question in questions %}
@@ -35,6 +35,7 @@
                 <div class="question"><a href="{% url question_id=question.id question_text=question.text %}">This is a question</a></div>
             </div>
         {% endfor %}
+
 
     </div>
 </body>
