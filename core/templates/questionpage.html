@@ -22,16 +22,20 @@
             </form>   
         </div>
         
-        <div class="button"><a href="">Browse Questions</a></div>
-     </div>
+     <!--   <div class="button"><a href="">Browse Questions</a></div>
+     </div> -->
 
-	<!--Top Questions
-    Repeat "questionBox" for however many questions we want to appear-->
     <div class="content">
-    	<div class="questionBox">
-        	<div class="user"><a href="#userprofile"><img src="#avatar" alt="#username#" /></a></div>
-            <div class="question"><a href="#questionpage">This is a question</a></div>
-        </div>
+    <h2>Browse Questions</h2>
+
+        {% for question in questions %}
+            <div class="questionBox">
+                <div class="user"><img src="{% if question.user.profile.librarian %}librarian_avatar.jpg{% else %}generic_avatar.jpg{% endif %}" alt="{{ question.user.username }}" /></div>
+                <div class="question"><a href="{% url question_id=question.id question_text=question.text %}">This is a question</a></div>
+            </div>
+        {% endfor %}
+
+
     </div>
 
 

@@ -32,6 +32,7 @@ a:hover {
 .nav {
 	width:100%;
 	min-height:100px;
+	padding-bottom:15px;
 }
 
 .askQuestion .button nav {
