@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>cuttr | Question Page</title>
-<link rel="stylesheet" type="text/css" href="cuttr.css" />
+<link rel="stylesheet" href="cuttr.css" />
 </head>
 
 <body>
@@ -16,7 +16,8 @@
             <h2>Ask a question</h2>
             <form action="">
             <label>
-                <textarea rows="1" cols="50"><input type="text" name="question" /></textarea><input type="submit" value="submit" />
+            	<textarea name="textarea" rows="1" cols="50">Type your question here</textarea>
+                <!-- <textarea rows="1" cols="50"><input type="text" name="question" /></textarea><input type="submit" value="submit" /> -->
             </label>
             </form>   
         </div>
@@ -28,7 +29,7 @@
     Repeat "questionBox" for however many questions we want to appear-->
     <div class="content">
     	<div class="questionBox">
-        	<div class="user"><a href="#userprofile#"><img src="#avatar#" alt="#username#" /></a></div>
+        	<div class="user"><a href="#userprofile"><img src="#avatar" alt="#username#" /></a></div>
             <div class="question"><a href="#questionpage">This is a question</a></div>
         </div>
     </div>
