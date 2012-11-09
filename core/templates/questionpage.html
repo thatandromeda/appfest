@@ -21,16 +21,15 @@
             </form>   
         </div>
         
-        <div class="button"><a href="">Browse Questions</a></div>
-     </div>
+     <!--   <div class="button"><a href="">Browse Questions</a></div>
+     </div> -->
 
     <div class="content">
+    
+    <h2>Browse Questions</h2>
 
         {% for question in questions %}
             <div class="questionBox">
-                {% comment %}
-                    UserProfiles not wireframed or implemented yet, so I've removed the link to them.
-                {% endcomment %}
                 <div class="user"><img src="{% if question.user.profile.librarian %}librarian_avatar.jpg{% else %}generic_avatar.jpg{% endif %}" alt="{{ question.user.username }}" /></div>
                 <div class="question"><a href="{% url question_id=question.id question_text=question.text %}">This is a question</a></div>
             </div>
