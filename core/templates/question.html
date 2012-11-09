@@ -8,9 +8,10 @@
 
 <body>
 
-	<header><h1>cuttr</h1></header>
+	<header><img src="images/cuttr_logo.png" /></header>
     
     <!--Top Nav-->
+   <div class="mainContent">
         <div class="askQuestion">
             <h2>Ask a question</h2>
             <form action="">
@@ -23,7 +24,7 @@
      <!--   <div class="button"><a href="">Browse Questions</a></div>
      </div> -->
 
-    <div class="content">
+    <div class="pageContent">
     
     <h2>{{question_id=question.id question_text=question.text}}</h2>
 
@@ -39,7 +40,7 @@
         {% endfor %}
 
     </div>
-
+</div>
 
 </body>
 </html>
