@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>cuttr | Question</title>
+<link rel="stylesheet" type="text/css" href="cuttr.css" />
+</head>
+
+<body>
+
+	<header><h1>cuttr</h1></header>
+    
+    <!--Top Nav-->
+        <div class="askQuestion">
+            <h2>Ask a question</h2>
+            <form action="">
+            <label>
+                <textarea rows="1" cols="50"><input type="text" name="question" /></textarea><input type="submit" value="submit" />
+            </label>
+            </form>   
+        </div>
+        
+     <!--   <div class="button"><a href="">Browse Questions</a></div>
+     </div> -->
+
+    <div class="content">
+    
+    <h2>{{question_id=question.id question_text=question.text}}</h2>
+
+        {% for question in questions %}
+            <div class="commentBox">
+                <div class="user"><img src="{% if question.user.profile.librarian %}librarian_avatar.jpg{% else %}generic_avatar.jpg{% endif %}" alt="{{ question.user.username }}" /></div>
+                <div class="question">This is a comment</div>
+                <div class="comment">
+                	<div class="user"><img src="{% if question.user.profile.librarian %}librarian_avatar.jpg{% else %}generic_avatar.jpg{% endif %}" alt="{{ question.user.username }}" /></div>
+                	<div class="question">This is a comment reply</div>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+
+
+</body>
+</html>
