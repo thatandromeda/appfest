@@ -25,6 +25,7 @@
      </div>
 
     <div class="content">
+<<<<<<< HEAD
         {% for question in questions %}
             <div class="questionBox">
                 {% comment %}
@@ -34,6 +35,12 @@
                 <div class="question"><a href="{% url question_id=question.id question_text=question.text %}">This is a question</a></div>
             </div>
         {% endfor %}
+=======
+    	<div class="questionBox">
+        	<div class="user"><a href="#userprofile#"><img src="#avatar#" alt="#username#" /></a></div>
+            <div class="question"><a href="#questionpage#">This is a question</a></div>
+        </div>
+>>>>>>> minor fix
     </div>
 
 
